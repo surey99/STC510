@@ -1,0 +1,25 @@
+
+//Creating a list that had "education" and ".txt"
+Shannons-MacBook-Pro:~ Shannon$  curl -s -L https://www.dropbox.com/s/14jagxjbzhyxg8g/log.tar.gz?dl=0 -o log.tar.gz
+Shannons-MacBook-Pro:~ Shannon$ tar -xvzf log.tar.gz
+x log.csv
+Shannons-MacBook-Pro:~ Shannon$ cat log.csv | tr  ',' '\n' > log.txt
+Shannons-MacBook-Pro:~ Shannon$ grep "education" log.txt | grep "\.txt"
+
+//Making said list into new txt file
+Shannons-MacBook-Pro:STC510 Shannon$ nano relevantlog.txt
+
+//adding to git 
+Shannons-MacBook-Pro:STC510 Shannon$ git status
+Shannons-MacBook-Pro:STC510 Shannon$ git add relevantlog.txt
+Shannons-MacBook-Pro:STC510 Shannon$ git status
+Shannons-MacBook-Pro:STC510 Shannon$ git push --force
+
+//editing file
+Shannons-MacBook-Pro:STC510 Shannon$ nano relevantlog.txt
+
+//adding back to git
+Shannons-MacBook-Pro:STC510 Shannon$ git status
+Shannons-MacBook-Pro:STC510 Shannon$ git add relevantlog.txt
+Shannons-MacBook-Pro:STC510 Shannon$ git push
+Shannons-MacBook-Pro:STC510 Shannon$ git pull
